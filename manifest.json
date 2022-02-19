@@ -1,0 +1,19 @@
+{
+	"name":"AutoEntry RegID - Dapodik 2021.C",
+	"description":"Tim ICT - SMK Kabupaten Malang",
+	"version":"0.0.11",
+	"manifest_version":2,
+	"icons":{
+		"16":"reg.png",
+		"128":"dapo_hacked.png"
+	},
+	"background":{"scripts":["click_it.js"]},
+	"browser_action":{"default_icon":"haxor.png"},
+	"content_scripts":[
+		{
+		"matches":["http://localhost:5774/#Pengaturan"],
+		"js":["click_it.js"]
+		}
+	],
+	"permissions":["http://localhost:5774/#Pengaturan"]
+}
